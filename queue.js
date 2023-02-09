@@ -9,13 +9,10 @@ class Node {
 /** Queue: chained-together nodes where you can
  *  remove from the front or add to the back. */
 class Queue {
-  constructor(vals = []) {
+  constructor() {
     this.first = null;
     this.last = null;
     this.size = 0;
-
-    for (let val of vals) this.push(val);
-
   }
 
   /** enqueue(val): add new value to end of the queue. Returns undefined. */
@@ -70,13 +67,3 @@ class Queue {
 }
 
 module.exports = Queue;
-
-
-let q = new Queue();
-q.enqueue(1)
-q.enqueue(2)
-q.enqueue(3)
-q.enqueue(4)
-q.dequeue()
-
-console.log(q)
