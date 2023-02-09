@@ -44,3 +44,6 @@ class Stack {
 }
 
 module.exports = Stack;
+
+
+let stack = new Stack();
